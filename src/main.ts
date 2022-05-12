@@ -1,14 +1,14 @@
 import './style.css';
 import Typewriter from './Typewriter';
 
-const typewriter = new Typewriter(document.body, { loop: true });
-//   document.querySelector('.whitespace') as HTMLDivElement,
-//   {
-//     loop: true,
-//     typingSpeed: 10,
-//     deletingSpeed: 10,
-//   }
-// );
+const typewriter = new Typewriter(
+  document.querySelector('.whitespace') as HTMLDivElement,
+  {
+    loop: true,
+    typingSpeed: 10,
+    deletingSpeed: 10,
+  }
+);
 
 typewriter
   .typeString('Where do I start?')
